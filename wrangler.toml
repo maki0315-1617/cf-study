@@ -9,4 +9,5 @@ directory = "./dist"
 [[d1_databases]]
 binding = "DB"
 database_name = "my-production-db"
-database_id = "あなたのD1のID（そのままでOK）"
+database_id = "5aba313a-7e31-4ea7-ac85-0786895fa344"
+

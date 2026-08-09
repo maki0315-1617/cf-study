@@ -2,8 +2,8 @@
 name = "cf-study"
 compatibility_date = "2026-08-09"
 
-# ★この位置に指定します（Viteが自動でここにコピーしてくれます）
-main = "dist/_worker.js"
+# ★ここを変更：ビルド前の元のプログラム位置を直接指定します
+main = "src/index.js"
 
 [assets]
 directory = "./dist"

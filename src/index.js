@@ -2,7 +2,7 @@ export default {
   async fetch(request, env) {
     const url = new URL(request.url);
 
-    // URLが「/api/get-members」だった場合、D1からデータを取得してReactに返す
+    // 会員一覧取得API
     if (url.pathname === "/api/get-members") {
       try {
         const { results } = await env.DB.prepare(
@@ -16,7 +16,7 @@ export default {
       }
     }
 
-    // URLが「/api/add-member」だった場合、画面から届いた名前をD1に保存する
+    // 会員追加API
     if (url.pathname === "/api/add-member") {
       try {
         const { name, role } = await request.json();
@@ -34,7 +34,7 @@ export default {
       }
     }
 
-    // API以外のアクセス（通常の画面アクセス）は、そのままReactの画面を表示する
+    // API以外のアクセス（画面表示用）
     return env.ASSETS.fetch(request);
   }
 };

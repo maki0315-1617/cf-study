@@ -1,13 +1,12 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "cf-ron-web"
+name = "cf-study"
 compatibility_date = "2026-08-09"
 
-# ★公開するReactの出力フォルダを明示します
 [assets]
 directory = "./dist"
+binding = "ASSETS"
 
-# ★本番DBをコード側から100%強制接続させる設定です
 [[d1_databases]]
 binding = "DB"
 database_name = "my-production-db"
-database_id = "あなたの本番用D1データベースのID"
+database_id = "5aba313a-7e31-4ea7-ac85-0786895fa344"

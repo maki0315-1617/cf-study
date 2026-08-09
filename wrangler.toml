@@ -1,5 +1,5 @@
 #:schema node_modules/wrangler/config-schema.json
-name = "cf-test-web"
+name = "cf-ron-web"
 compatibility_date = "2026-08-09"
 
 # ★公開するReactの出力フォルダを明示します

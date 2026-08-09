@@ -2,6 +2,9 @@
 name = "cf-study"
 compatibility_date = "2026-08-09"
 
+# ★ここを追加：ビルド後に生成されるプログラムの位置を明示します
+main = "dist/_worker.js"
+
 [assets]
 directory = "./dist"
 binding = "ASSETS"

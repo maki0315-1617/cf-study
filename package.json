@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build && copy _worker.js dist\\_worker.js",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "pages:dev": "wrangler pages dev --compatibility-date=2026-08-09 --d1=DB -- npm run dev"
